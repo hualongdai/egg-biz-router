@@ -1,0 +1,22 @@
+{
+  "name": "egg-biz-router",
+  "version": "0.0.1",
+  "main": "build/index.js",
+  "eggPlugin": {
+    "name": "bizRouter",
+    "dependencies": [
+      "reflect-metadata"
+    ]
+  },
+  "keywords": [
+    "egg",
+    "egg-plugin-decorator",
+    "eggPluginDecorator",
+    "egg-biz-router",
+    "egg-controller",
+    "decorator"
+  ],
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}
