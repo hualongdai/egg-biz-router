@@ -8,6 +8,7 @@
       "reflect-metadata"
     ]
   },
+  "homepage": "https://hualongdai.github.io/github-actions-demo",
   "keywords": [
     "egg",
     "egg-plugin-decorator",
