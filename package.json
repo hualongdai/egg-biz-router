@@ -1,14 +1,10 @@
 {
   "name": "egg-biz-router",
   "version": "0.0.1",
-  "main": "build/index.js",
+  "description": "egg plugin demo by typescript",
   "eggPlugin": {
-    "name": "bizRouter",
-    "dependencies": [
-      "reflect-metadata"
-    ]
+    "name": "bizRouter"
   },
-  "homepage": "https://hualongdai.github.io/github-actions-demo",
   "keywords": [
     "egg",
     "egg-plugin-decorator",
@@ -16,6 +12,43 @@
     "egg-biz-router",
     "egg-controller",
     "decorator"
+  ],
+  "scripts": {
+    "tsc": "npm run clean && ets -o && tsc -p tsconfig.json",
+    "test": "npm run tsc && egg-bin test",
+    "cov": "npm run tsc && egg-bin cov",
+    "ci": "npm run cov",
+    "clean": "del './{app,config,test,typings}/**/*.{js,d.ts}'",
+    "prepublish": "npm run tsc"
+  },
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hualongdai/egg-biz-router.git"
+  },
+  "author": "whxaxes <whxaxes@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hualongdai/egg-biz-router/issues"
+  },
+  "homepage": "https://github.com/hualongdai/egg-biz-router#readme",
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "del-cli": "^2.0.0",
+    "egg": "^2.22.2",
+    "egg-bin": "^4.13.0",
+    "egg-mock": "^3.23.1",
+    "tslint": "^5.18.0",
+    "tslint-config-egg": "^1.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "app",
+    "config",
+    "typings",
+    "index.d.ts"
   ],
   "dependencies": {
     "reflect-metadata": "^0.1.13"
