@@ -1,10 +1,11 @@
 {
   "name": "egg-biz-router",
   "version": "0.0.1",
-  "description": "egg plugin demo by typescript",
+  "description": "egg plugin for controller router decorator by typescript",
   "eggPlugin": {
     "name": "bizRouter"
   },
+  "main": "build/index.js",
   "keywords": [
     "egg",
     "egg-plugin-decorator",
@@ -26,7 +27,7 @@
     "type": "git",
     "url": "git+https://github.com/hualongdai/egg-biz-router.git"
   },
-  "author": "whxaxes <whxaxes@gmail.com>",
+  "author": "hualongdai <fedlance@163.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hualongdai/egg-biz-router/issues"
