@@ -5,7 +5,6 @@ import './typings';
 
 declare module 'egg' {
   type HTTP_METHOD = 'GET' | 'POST' | 'HEAD' | 'OPTIONS' | 'PUT' | 'PATCH' | 'DELITE' | 'DEL' | 'ALL' | 'RESOURCES';
-  
   // class 的路由数据
   interface IClassPathData {
     path: string;

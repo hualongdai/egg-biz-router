@@ -22,7 +22,7 @@
     "clean": "del './{app,config,test,typings}/**/*.{js,d.ts}'",
     "prepublish": "npm run tsc"
   },
-  "types": "index.d.ts",
+  "types": "app/lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hualongdai/egg-biz-router.git"
